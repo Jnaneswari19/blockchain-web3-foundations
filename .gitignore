@@ -1,5 +1,51 @@
-"node_modules/" 
-"venv/" 
-"*.log" 
-"*.tmp" 
-"*.pdf"    # exclude generated PDFs except final docs
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs
+*.log
+*.log.*
+log/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Build outputs
+dist/
+build/
+out/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Temporary files
+tmp/
+*.tmp
+*.bak
+
+# Python cache (if any scripts are used)
+__pycache__/
+*.pyc
+*.pyo
+
+# Screenshots are tracked, but ignore other images
+*.png
+*.jpg
+*.jpeg
+*.gif
+!screenshots/*.png
